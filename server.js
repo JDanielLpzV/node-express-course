@@ -38,6 +38,9 @@ app.get('/users',function(req,res){
         users: mockUserData
     });
 });
+app.get('/comment',function(req,res){
+    res.send('Este es un mensaje del desarrollador al usuario');
+})
 // colons are used as variables that be viewed in the params
 app.get('/users/:id',function(req,res){
     console.log(req.params.id);
